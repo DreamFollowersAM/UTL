@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="media/UTL-logo.png"/>
+  <title>UTL</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+  rel="stylesheet"
+  />
+  <!-- SWIPER -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="css/Main.css" />
+</head>
+<body>
+  <%- include('../partials/navbar'); %>
+
+  <div class="nvfloatingcnt">
+    <div class="floatingNV justify-content-center align-items-center p-0 m-0 shadow">
+      <ul class="d-flex justify-content-center align-items-center flex-column p-0 m-0" style="min-height: 350px;">
+        <li class="nvicn my-2"><button title="Noticias" class="nvbtn" onclick="navigate(1)"><img src="" alt="" class="img-fluid"></button></li>
+        <li class="nvicn my-2"><button title="Nuestra Rectora" class="nvbtn" onclick="navigate(2)"><img src="" alt="" class="img-fluid"></button></li>
+        <li class="nvicn my-2"><button title="Conoce la UTL" class="nvbtn" onclick="navigate(3)"><img src="" alt="" class="img-fluid"></button></li>
+        <li class="nvicn my-2"><button title="Calidad" class="nvbtn" onclick="navigate(4)"><img src="" alt="" class="img-fluid"></button></li>
+        <li class="nvicn my-2"><button title="Normativa" class="nvbtn" onclick="navigate(5)"><img src="" alt="" class="img-fluid"></button></li>
+        <li class="nvicn my-2"><button title="Contacto" class="nvbtn" onclick="navigate(6)"><img src="" alt="" class="img-fluid"></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="maincnt container-fluid">
+    <div id="p1" class="container-fluid">
+      <div class="swiper slider shadow">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="img-fluid" alt=""/></div>
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp" class="img-fluid" alt=""/></div>
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp" class="img-fluid" alt=""/></div>
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp" class="img-fluid" alt=""/></div>
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp" class="img-fluid" alt=""/></div>
+          <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp" class="img-fluid" alt=""/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="container-fluid shadow p-3 mt-4">
+        <div class="container-fluid mx-4 p-4">
+          <h2>Ultimas noticias</h2>
+        </div>
+        <div class="container-fluid d-flex p-3">
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex p-3">
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+
+          <div class="card w-25 mx-auto">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p2" class="container-fluid">
+      <div class="container-fluid shadow p-3">
+        <div class="container-fluid d-flex">
+          <div class="w-50 mx-auto px-3 pb-4" style="text-align: justify;">
+            <div class="container-fluid p-4">
+              <h2>Mensaje de nuestra rectora</h2>
+            </div>
+
+            <p class="fw-bold">Querida Comunidad UTL:</p>
+
+            <p class="my-2 lh-base">
+              Es un gusto muy especial dirigirme a todas y todos los integrantes de la Comunidad UTL: estudiantado, personal docente y administrativo, y demás plantilla actoral de nuestro entorno universitario.
+            </p>
+            <p class="my-2 lh-base">
+              Desde marzo ya estamos de regreso a casa. Y en este deseo de normalizar nuestra vida universitaria, hemos vivenciado un proceso necesario de reencuentro, de reconocimiento, para compensar esos meses de confinamiento que afectaron nuestra forma de relacionarnos personal y colectivamente. Pero si algo nos define, es que somos una institución tecnológicamente humana, en innovación y adaptación constante.
+            </p>              
+            <p class="my-2 lh-base">
+              Y en esta nueva realidad, que nos enfocamos en dar prioridad a la salud, atendiendo en todo momento a las medidas sanitarias para mantener a raya todo contagio. Además, es necesario, como dice nuestro Gobernador Diego Sinhué Rodríguez, reinventarnos para ser mejores, esto es, crear nuevas formas de realizar el proceso formativo, académico, administrativo para que nuestra UTL siga siendo considerada un bastión importante del ecosistema educativo guanajuatense.
+            </p>
+            <p class="my-2 lh-base">
+              Como bien lo dice nuestro lema “Somos Leones, Somos Leonas”, les invito a construir entre todos una “guarida segura” donde prevalezca un ambiente de colaboración y convivencia, donde nos sintamos a gusto en “nuestra guarida”, promoviendo una cultura de paz y de respeto a nuestros derechos humanos fundamentales. Acorde a los nuevos tiempos, mostremos a la sociedad que la UTL es íntegra, inclusiva y sostenible.
+            </p>
+
+            <p class="fw-bold text-center m-0 p-0">Yoloxóchitl Bustamante Díez</p>
+            <p class="text-center m-0 p-0">Encargada del Despacho de Rectoría</p>
+          </div>
+          <div class="w-50 mx-auto p-3" style="overflow: hidden;">
+            <img src="media/Nosotros/Rectora.png" alt="Yoloxóchitl Bustamante Díez" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p3" class="container-fluid">
+      
+      <div class="p-4 shadow">
+        <ul class="nav nav-pills mb-3 d-flex justify-content-end" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="ex1-tab-1"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-1"
+              role="tab"
+              aria-controls="ex1-pills-1"
+              aria-selected="true"
+              >Historia y Filosofia</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-2"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-2"
+              role="tab"
+              aria-controls="ex1-pills-2"
+              aria-selected="false"
+              >Organigrama</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-3"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-3"
+              role="tab"
+              aria-controls="ex1-pills-3"
+              aria-selected="false"
+              >Consejo Directivo</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-4"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-4"
+              role="tab"
+              aria-controls="ex1-pills-2"
+              aria-selected="false"
+              >PIDE</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-5"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-5"
+              role="tab"
+              aria-controls="ex1-pills-3"
+              aria-selected="false"
+              >UTL Cifras</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-6"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-6"
+              role="tab"
+              aria-controls="ex1-pills-2"
+              aria-selected="false"
+              >Planteles</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="ex1-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex1-pills-1"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-1"
+          >
+
+            <div class="container-fluid shadow p-3">
+              <div class="container-fluid mx-4 p-4">
+                <h2>Historia</h2>
+              </div>
+              <div class="container-fluid d-flex">
+                <div class="w-50 mx-auto" style="overflow: hidden; max-height: 250px;">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp" alt="" class="img-fluid">
+                </div>
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <p class="my-2 lh-base">
+                    La Universidad Tecnológica de León inició su funcionamiento el 26 de septiembre de 1995, con la inauguración de cursos efectuada por el C. Vicente Fox Quesada, Gobernador Constitucional del Estado de Guanajuato, ante la presencia de altas personalidades del gobierno federal, estatal, municipal y la comunidad universitaria.
+                  </p>
+                  <p class="my-2 lh-base">
+                    Desde el 25 de septiembre de 1995 y hasta la fecha, formamos ciudadanos y ciudadanas de bien, con pensamiento global y acción local, con innovación, profundos valores humanos y universales y sobre todo, brindando educación tecnológica y de calidad, orientada a la industria 4.0 y la mente-factura”. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid shadow p-3 mt-4">
+              <div class="container-fluid mx-4 p-4">
+                <h2>Filosofia</h2>
+              </div>
+              <div class="container-fluid d-flex" style="text-align: justify;">
+                <div class="w-50 mx-auto px-4">
+                  <p class="fw-bold ms-5">Mision</p>
+      
+                  <p class="my-2 lh-base">
+                    Formar ciudadanos/as del mundo con educación tecnológica de calidad a través de la docencia, la investigación aplicada, la difusión del conocimiento y la vinculación, que contribuyan a la innovación y al desarrollo sustentable.
+                  </p>
+      
+                  <p class="fw-bold ms-5">Vision</p>
+      
+                  <p class="my-2 lh-base">
+                    Somos una universidad reconocida por su calidad internacional, sus aportaciones al desarrollo de la tecnología y al bienestar de la sociedad.
+                  </p>
+      
+                  <p class="fw-bold ms-5">Valores</p>
+      
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Dignidad:</span> Es el valor intrínseco de las personas, así como de los objetos y situaciones en cuanto contribuyen a la realización personal.
+                  </p>
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Honestidad:</span> Tener conciencia clara de lo que está bien en nuestra propia conducta y en nuestra relación con los demás 
+                  </p>
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Libertad:</span> Tomar decisiones propias y expresar ideales aceptando las diferencias con el resto de las personas.
+                  </p>
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Busqueda de la verdad:</span> Cualidad de la inteligencia por la cual el ser humano se capacita y perfecciona para llegar a las causas de las cosas.
+                  </p>
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Responsabilidad:</span> Cumplir con las obligaciones y trabajos asignados según las normas establecidas.
+                  </p>
+                  <p class="my-2 lh-base">
+                    <span class="fw-bold">Justicia:</span> Conjunto de principios que adopta una comunidad a fin de asegurar el orden y la convivencia entre sus miembros. 
+                  </p>
+                </div>
+                <div class="w-50 mx-auto" style="overflow: hidden;">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/190.webp" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+              
+            <div class="container-fluid shadow">
+              <img src="media/Nosotros/Estructura_UTL.png" alt="" class="img-fluid">
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+            
+            <div class="container-fluid shadow p-3">
+              <div class="container-fluid d-flex">
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <div class="container-fluid mx-2 p-4">
+                    <h2>Consejo Directivo</h2>
+                  </div>
+                  <p class="my-2 lh-base">
+                    Es el máximo órgano de gobierno de la universidad y en conjunto con la Rectoría, son los responsables de su dirección y administración.
+                  </p>
+                  <p class="my-2 lh-base">
+                    El Consejo Directivo está integrado de la siguiente manera:
+                  </p>
+                  <p>
+                    <ol style="list-style: upper-roman;">
+                      <li>Tres representantes del Gobierno del Estado de Guanajuato, que serán nombrados por el Gobernador y lo presidirá quien él designe;</li>
+                      <li>Tres representantes del Gobierno Federal, designados por el Secretario de Educación Pública;</li>
+                      <li>Un representante del Gobierno Municipal designado por el H. Ayuntamiento, donde se ubique la universidad;</li>
+                      <li>Dos representantes del Sector Productivo, a invitación del Ejecutivo Estatal.</li>
+                    </ol>
+                  </p>
+                </div>
+
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <object data="media/Nosotros/ReglamentoConsejoDirectivo.pdf" type="application/pdf" width="100%" height="450px">
+                    <p>No ha sido posible cargar el archivo. <a href="media/Nosotros/ReglamentoConsejoDirectivo.pdf" target="_blank">Descargar</a>.</p>
+                  </object>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid shadow p-3 mt-4">
+              <div class="container-fluid d-flex">
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <h2>Informes Anuales</h2>
+                  <div class="container-fluid d-flex justify-content-center align-items-center my-4">
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                  </div>
+                </div>
+
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <h2>Informes Cuatrimestrales</h2>
+                  <div class="container-fluid d-flex justify-content-center align-items-center my-4">
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                    <a href="" class="btn btn-outline-primary rounded-pill m-2 w-25">0000 - 0000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+            
+            <div class="container-fluid shadow p-3">
+              <div class="container-fluid d-flex">
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <div class="container-fluid mx-2 p-4">
+                    <h2>Plan Institucional de Desarrollo 2021-2025 (PIDE)</h2>
+                  </div>
+                  <div class="container-fluid d-flex">
+
+                    <div class="w-50 m-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-50 m-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="container-fluid d-flex">
+
+                    <div class="w-50 m-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-50 m-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="w-50 mx-auto px-4" style="text-align: justify;">
+                  <object data="media/Nosotros/PIDEUTL2021-2025.pdf" type="application/pdf" width="100%" height="450px">
+                    <p>No ha sido posible cargar el archivo. <a href="media/Nosotros/PIDEUTL2021-2025.pdf" target="_blank">Descargar</a>.</p>
+                  </object>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+            En construccion 4
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-6" role="tabpanel" aria-labelledby="ex1-tab-6">
+            En construccion 5
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="p4" class="container-fluid">
+
+    </div>
+
+    <div id="p5" class="container-fluid">
+
+    </div>
+
+    <div id="p6" class="container-fluid">
+
+    </div>
+  </div>
+
+  <%- include('../partials/footer'); %>
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- MDB -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+  ></script>
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="js/Main.js"></script>
+</body>
+</html>

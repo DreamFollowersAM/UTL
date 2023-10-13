@@ -1,0 +1,70 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top p-1 patter shadow">
+    <!-- Container wrapper -->
+    <div class="container-fluid justify-content-center">
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+    
+            <!-- Links -->
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="/Docente">Docente</a>
+            </li>
+
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="/Empresario">Empresario</a>
+            </li>
+
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="/Administrativo">Administrativo</a>
+            </li>
+    
+        </ul>
+        <ul class="navbar-nav me-3 mb-lg-0">
+    
+            <li class="nav-item mx-5">
+            <a class="nav-link" href="/"><img src="media/UTL-logo-white.png" alt="LogoUTL" style="width: 40px;"></a>
+            </li>
+        
+        </ul>
+        <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+    
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/Aspirante">Aspirante</a>
+            </li>
+  
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/Estudiante">Estudiante</a>
+            </li>
+  
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/Egresado">Egresado</a>
+            </li>
+    
+        </ul>
+  
+        <!-- Icons -->
+        <ul class="navbar-nav position-absolute end-0 mx-3">
+          <li class="nav-item me-3 me-lg-0">
+            <button class="nav-link" onclick="search(1)"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <div id="searchbar" class="container-fluid p-1 d-flex justify-content-center align-items-center">
+    <div class="searchinput d-flex justify-content-center align-items-center w-25 shadow">
+        <input id="buscador" type="text" class="w-75 px-4" placeholder="Buscar" style="background-color: transparent; border: none; color: white;">
+        <button class="nav-link w-25 text-center" style="color: white;" onclick="search(0)"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
