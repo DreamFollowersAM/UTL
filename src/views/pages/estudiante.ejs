@@ -36,7 +36,7 @@
   <%- include('../partials/navbar'); %>
 
   <div class="nvfloatingcnt">
-    <div class="floatingNV justify-content-center align-items-center p-0 m-0 shadow-sm">
+    <div class="floatingNV<% if(vst){ %>2<% } %> justify-content-center align-items-center p-0 m-0 shadow">
       <ul class="d-flex justify-content-center align-items-center flex-column p-0 m-0" style="min-height: 350px;">
         <li class="nvicn my-2"><button title="Noticias" class="nvbtn" onclick="navigate(1)"><img src="" alt="" class="img-fluid"></button></li>
         <li class="nvicn my-2"><button title="Nuestra Rectora" class="nvbtn" onclick="navigate(2)"><img src="" alt="" class="img-fluid"></button></li>
@@ -62,9 +62,9 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <div class="container-fluid shadow p-3 mt-4">
+      <div class="container-fluid shadow p-3 mt-4 glass">
         <div class="container-fluid mx-4 p-4">
-          <h2>Ultimas noticias: Estudiantes</h2>
+          <h2>Ultimas noticias</h2>
         </div>
         <div class="container-fluid d-flex p-3">
           <div class="card w-25 mx-auto">
@@ -126,7 +126,7 @@
     </div>
 
     <div id="p2" class="container-fluid">
-      <div class="container-fluid shadow p-3">
+      <div class="container-fluid shadow p-3 glass">
         <div class="container-fluid d-flex">
           <div class="w-50 mx-auto px-3 pb-4" style="text-align: justify;">
             <div class="container-fluid p-4">
@@ -158,7 +158,7 @@
 
     <div id="p3" class="container-fluid">
       
-      <div class="p-4 shadow">
+      <div class="p-4 shadow glass">
         <ul class="nav nav-pills mb-3 d-flex justify-content-end" id="ex1" role="tablist">
           <li class="nav-item" role="presentation">
             <a
@@ -205,7 +205,7 @@
             aria-labelledby="ex1-tab-1"
           >
 
-            <div class="container-fluid d-flex shadow">
+            <div class="container-fluid d-flex shadow glass">
               <div class="w-50 mx-auto px-3 pb-4" style="text-align: justify;">
                 <div class="container-fluid p-4">
                   <h2>Solicitud de Constancias</h2>
@@ -226,7 +226,7 @@
               </div>
             </div>
 
-            <div class="contauiner-fluid shadow p-5 mt-4">
+            <div class="contauiner-fluid shadow p-5 mt-4 glass">
               <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="CONSTANCIA 21-03-2023" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62461312c1dd840018544a09" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
             </div>
 
@@ -234,7 +234,7 @@
 
           <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
               
-            <div class="container-fluid d-flex shadow">
+            <div class="container-fluid d-flex shadow glass">
               <div class="w-50 mx-auto px-3 pb-4" style="text-align: justify;">
                 <div class="container-fluid p-4">
                   <h2>Becas UTL</h2>
@@ -252,7 +252,7 @@
               </div>
             </div>
 
-            <div class="contauiner-fluid shadow p-5 mt-4">
+            <div class="contauiner-fluid shadow p-5 mt-4 glass">
               <div style="width: 100%;"><div style="position: relative; padding-bottom: 200%; padding-top: 0; height: 0;"><iframe title="Sitio Becas_EA6" frameborder="0" width="800px" height="1600px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6409ef9f15155d00126a8ace" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
             </div>
 
@@ -274,6 +274,226 @@
     </div>
 
     <div id="p6" class="container-fluid">
+
+      <div class="p-4 shadow glass">
+        <ul class="nav nav-pills mb-3 d-flex justify-content-end" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="ex1-tab-11"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-11"
+              role="tab"
+              aria-controls="ex1-pills-11"
+              aria-selected="true"
+              >Directorio</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-12"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-12"
+              role="tab"
+              aria-controls="ex1-pills-12"
+              aria-selected="false"
+              >Oficina Virtual Escolares</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="ex1-tab-13"
+              data-mdb-toggle="pill"
+              href="#ex1-pills-13"
+              role="tab"
+              aria-controls="ex1-pills-13"
+              aria-selected="false"
+              >Buzon Institucional</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content" id="ex1-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex1-pills-11"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-11"
+          >
+            
+          <div class="container-fluid shadow p-3 glass mb-4">
+            <div class="container-fluid d-flex">                
+              <div class="w-100 mx-auto px-4" style="text-align: justify;">
+                <div class="container-fluid mx-2 px-4">
+                  <h2>Directorio</h2>
+                </div>
+
+                <div class="conatiner-fluid shadow glass my-4" style="height: 300px; overflow: hidden;"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt=""/></div>
+                
+                <table>
+                  <thead class="v-data-table-header" style="background-color: rgba(0, 48, 130, 1); color: white; line-height: 50px;">
+                    <tr>
+                      <th role="columnheader" scope="col" aria-label="Ext." class="text-start"><span>Ext.</span></th>
+                      <th role="columnheader" scope="col" aria-label="Nombre" class="text-start"><span>Nombre</span></th>
+                      <th role="columnheader" scope="col" aria-label="Puesto" class="text-start"><span>Puesto</span></th>
+                      <th role="columnheader" scope="col" aria-label="Depto." class="text-start"><span>Depto.</span></th>
+                      <th role="columnheader" scope="col" aria-label="Email" class="text-start"><span>Email</span></th>
+                      <th role="columnheader" scope="col" aria-label="Servicio" class="text-start"><span>Servicio</span></th>
+                      <th role="columnheader" scope="col" aria-label="Edificio" class="text-start"><span>Edificio</span></th>
+                      <th role="columnheader" scope="col" aria-label="Planta" class="text-start"><span>Planta</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td class="text-start">128</td>
+                      <td class="text-start">Liliana Estrada Afanador</td>
+                      <td class="text-start">Jefatura de Servicios Escolares</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">lestrada@utleon.edu.mx</td>
+                      <td class="text-start">Servicios Escolares</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">202</td>
+                      <td class="text-start">Laura Berenice Rodríguez Rangel</td>
+                      <td class="text-start">Subdirectora de Servicios Estudiantiles</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">lrodriguezr@utleon.edu.mx</td>
+                      <td class="text-start">Servicios Escolares</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">205</td>
+                      <td class="text-start">Ana Gabriela Martínez Soto</td>
+                      <td class="text-start">Coordinador de becas</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">agmartinez@utleon.edu.mx</td>
+                      <td class="text-start">Becas</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">206</td>
+                      <td class="text-start">Alma Delia Salazar Arteaga</td>
+                      <td class="text-start">Titulación</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">aarteaga@utleon.edu.mx</td>
+                      <td class="text-start">Titulación</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">210</td>
+                      <td class="text-start">José Omar Ramírez Barajas</td>
+                      <td class="text-start">Control de Planeación Escolar</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">jramirezb@utleon.edu.mx</td>
+                      <td class="text-start">Bajas</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">296</td>
+                      <td class="text-start">Luis Alejandro Gonzalez Castro</td>
+                      <td class="text-start">Asesor Estudiantil</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">lgonzalezc@utleon.edu.mx</td>
+                      <td class="text-start">Asesor de Escolares</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">297</td>
+                      <td class="text-start">Brenda Isabel Tellez Reyes</td>
+                      <td class="text-start">Asesor de Atención a Alumnos</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">btellez@utleon.edu.mx</td>
+                      <td class="text-start">Asesor de Escolares</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">452</td>
+                      <td class="text-start">Evangelina Torres Padilla</td>
+                      <td class="text-start">Asesor de Atención a Alumnos</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">etorresp@utleon.edu.mx</td>
+                      <td class="text-start">Asesor de Escolares</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">602</td>
+                      <td class="text-start">Geraldyne Jiménez Contreras</td>
+                      <td class="text-start">Coordinadora de Admisiones</td>
+                      <td class="text-start">Subdirección de Servicios Estudiantiles</td>
+                      <td class="text-start">gjimenez@utleon.edu.mx</td>
+                      <td class="text-start">Admisiones</td>
+                      <td class="text-start">CVD</td>
+                      <td class="text-start">Baja</td>
+                    </tr>
+                    <tr class="">
+                      <td class="text-start">115</td>
+                      <td class="text-start">Luis Enrique Pérez Naveda</td>
+                      <td class="text-start">Docente</td>
+                      <td class="text-start">Dirección de Área Económico Administrativa</td>
+                      <td class="text-start">leperez@utleon.edu.mx</td>
+                      <td class="text-start">Gestor de carrera</td>
+                      <td class="text-start">A</td>
+                      <td class="text-start">Alta</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-12" role="tabpanel" aria-labelledby="ex1-tab-12">
+            
+            <div class="container-fluid shadow glass p-0 d-flex justify-content-center" style="overflow: hidden;">
+              <a style="width: 100%; overflow: hidden;" href="https://zoom.us/j/96138425219?pwd=RlNqSTM0WVZZK0w5N212SkFnL0lVUT09#success" target="_blank">
+                <img src="media/Nosotros/Banner_oficina virtual escolares.png" alt="" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="ex1-pills-13" role="tabpanel" aria-labelledby="ex1-tab-13">
+            
+            <div class="container-fluid d-flex shadow glass">
+              <div class="container-fluid mx-auto px-3 pb-4" style="text-align: justify;">
+                <div class="container-fluid mx-2 px-4 mt-4">
+                  <h2>Buzón de Atención de Acoso y Hostigamiento Sexual</h2>
+                </div>
+
+                <div class="conatiner-fluid shadow glass my-4" style="height: 300px; overflow: hidden;"><img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt=""/></div>
+    
+                <h4>Políticas de atención al Buzón Institucional</h4>
+                <ol>
+                  <li class="my-2">La solicitud deberá contener redacción clara, congruente y con lenguaje respetuoso, planteamiento bien definido sin ambigüedades.</li>
+                  <li class="my-2">Expresar acciones reales, es decir, que sean posibles de llevarse a cabo.</li>
+                  <li class="my-2">Deberás escribir datos verídicos, sí el correo de contacto no existe, no habrá manera de contactarte. </li>
+                  <li class="my-2">Sí eres; aspirante, alumno(a), ex alumno(a) o egresado(a), te invitamos a identificarte mencionando: folio o matrícula, nombre y carrera.</li>
+                  <li class="my-2">Se te deberá dar respuesta en un lapso no mayor a tres días hábiles para que sea considerada como oportuna.</li>
+                  <li class="my-2">Una vez recibida la respuesta a tu solicitud, deberás contestar el correo de satisfacción en un período no mayor a tres días, de lo contrario, se registrará como satisfecha.</li>
+                  <li class="my-2">Quedarán registradas todas las solicitudes para su atención y seguimiento.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="contauiner-fluid shadow p-5 mt-4 glass">
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Buzón Institucional" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/641391987a622500178cf5a2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

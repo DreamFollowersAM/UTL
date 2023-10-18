@@ -1,3 +1,5 @@
+sc = false;
+
 navigate(1);
 
 function navigate(id){
@@ -18,6 +20,16 @@ function search(op){
     document.getElementById('searchbar').style.setProperty("display", "flex", "important");
   }else{
     document.getElementById('searchbar').style.setProperty("display", "none", "important");
+  }
+}
+
+function showSC(){
+  sc = !sc;
+
+  if(sc){
+    document.getElementById('scts').style.setProperty("display", "flex", "important");
+  }else{
+    document.getElementById('scts').style.setProperty("display", "none", "important");
   }
 }
 
