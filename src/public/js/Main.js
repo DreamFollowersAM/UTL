@@ -47,3 +47,51 @@ var swiper = new Swiper(".slider", {
       disableOnInteraction: false,
     },
   });
+
+var swiper2 = new Swiper(".mySwiper2", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  var swiper3 = new Swiper(".mySwiper3", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  var swiper4 = new Swiper(".mySwiper4", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
