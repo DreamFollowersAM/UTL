@@ -95,3 +95,51 @@ var swiper2 = new Swiper(".mySwiper2", {
       disableOnInteraction: false,
     },
   });
+
+  var swiper5 = new Swiper(".mySwiper5", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  var swiper6 = new Swiper(".mySwiper6", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  var swiper7 = new Swiper(".mySwiper7", {
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
