@@ -5,71 +5,111 @@
   
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+        <img src="media/UTL-logo-white.png" alt="LogoUTL" style="width: 40px;">
       </button>
   
       <!-- Collapsible wrapper -->
+      <ul class="navbar-nav position-absolute start-0 mx-3">
+        <li class="nav-item ms-3 ms-lg-0">
+          <button class="nav-link" onclick="showSC()"><i class="fas fa-grip"></i></button>
+        </li>
+      </ul>
+
       <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
-        <ul class="navbar-nav position-absolute start-0 mx-3">
-          <li class="nav-item me-3 me-lg-0">
-            <button class="nav-link" onclick="showSC()"><i class="fas fa-grip"></i></button>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav me-3 mb-2 mb-lg-0">
-    
-            <!-- Links -->
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="/Docente">Docente</a>
-            </li>
-
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="/Empresario">Empresario</a>
-            </li>
-
-            <li class="nav-item mx-3">
-                <a class="nav-link" href="/Administrativo">Administrativo</a>
-            </li>
-    
-        </ul>
-        <ul class="navbar-nav me-3 mb-lg-0">
-    
-            <li class="nav-item mx-5">
-            <a class="nav-link" href="/"><img src="media/UTL-logo-white.png" alt="LogoUTL" style="width: 40px;"></a>
-            </li>
         
-        </ul>
-        <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+        <div id="desktop" class="container-fluid d-flex justify-content-center align-items-center">
+          
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+      
+              <!-- Links -->
+              <li class="nav-item mx-3">
+                  <a class="nav-link" href="/Docente">Docente</a>
+              </li>
+  
+              <li class="nav-item mx-3">
+                  <a class="nav-link" href="/Empresario">Empresario</a>
+              </li>
+  
+              <li class="nav-item mx-3">
+                  <a class="nav-link" href="/Administrativo">Administrativo</a>
+              </li>
+      
+          </ul>
+          <ul class="navbar-nav me-3 mb-lg-0">
+      
+              <li class="nav-item mx-5">
+              <a class="nav-link" href="/"><img src="media/UTL-logo-white.png" alt="LogoUTL" style="width: 40px;"></a>
+              </li>
+          
+          </ul>
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+      
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="/Aspirante">Aspirante</a>
+              </li>
     
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="/Aspirante">Aspirante</a>
-            </li>
-  
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="/Estudiante">Estudiante</a>
-            </li>
-  
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="/Egresado">Egresado</a>
-            </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="/Estudiante">Estudiante</a>
+              </li>
     
-        </ul>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="/Egresado">Egresado</a>
+              </li>
+      
+          </ul>
+          
+        </div>
+
+        <div id="shortscreen" class="container-fluid d-flex justify-content-center align-items-center">
+          
+          <ul class="navbar-nav my-2 my-lg-0 text-center">
+      
+              <li class="nav-item">
+                <a class="nav-link" href="/">UTL</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/Docente">Docente</a>
+              </li>
   
-        <!-- Icons -->
-        <ul class="navbar-nav position-absolute end-0 mx-3">
-          <li class="nav-item me-3 me-lg-0">
-            <button class="nav-link" onclick="search(1)"><i class="fas fa-search"></i></button>
-          </li>
-        </ul>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Empresario">Empresario</a>
+              </li>
+  
+              <li class="nav-item">
+                  <a class="nav-link" href="/Administrativo">Administrativo</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/Aspirante">Aspirante</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/Estudiante">Estudiante</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/Egresado">Egresado</a>
+              </li>
+      
+          </ul>
+          
+        </div>
   
       </div>
+
+      <ul class="navbar-nav position-absolute end-0 mx-3">
+        <li class="nav-item me-3 me-lg-0">
+          <button class="nav-link" onclick="search(1)"><i class="fas fa-search"></i></button>
+        </li>
+      </ul>
     </div>
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
 
   <div id="searchbar" class="container-fluid p-1 d-flex justify-content-center align-items-center">
-    <div class="searchinput d-flex justify-content-center align-items-center w-25 shadow">
+    <div class="searchinput d-flex justify-content-center align-items-center shadow">
         <input id="buscador" type="text" class="w-75 px-4" placeholder="Buscar" style="background-color: transparent; border: none; color: white;">
         <button class="nav-link w-25 text-center" style="color: white;" onclick="search(0)"><i class="fas fa-search"></i></button>
     </div>
@@ -77,7 +117,6 @@
 
   <div id="scts" class="container-fluid p-1 d-flex justify-content-center align-items-center">
     <div class="scts d-flex justify-content-center align-items-center shadow">
-      <div class="w-100 d-flex justify-content-center align-items-center">
         <a title="Aula Virtual" href="http://aulaut.utleon.edu.mx/" target="_blank" class="nvicn m-2"></a>
         <a title="Calendario Escolar" href="https://www.utleon.edu.mx/resource/img/CALENDARIO%20LE%C3%93N.jpg" target="_blank" class="nvicn m-2"></a>
         <a title="SITO" href="https://sito.utleon.edu.mx/" target="_blank" class="nvicn m-2"></a>
@@ -85,6 +124,5 @@
         <a title="Correo" href="https://login.microsoftonline.com" target="_blank" class="nvicn m-2"></a>
         <a title="One Drive" href="https://onedrive.live.com/login/" target="_blank" class="nvicn m-2"></a>
         <a title="SAC" href="http://sac.utleon.edu.mx/" target="_blank" class="nvicn m-2"></a>
-      </div>
     </div>
   </div>

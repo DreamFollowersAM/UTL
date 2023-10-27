@@ -109,13 +109,14 @@ img{
 }
 
 #searchbar, #scts{
+    min-width: 300px;
     position: fixed;
     z-index: 40;
     display: none !important;
 }
 
 .searchinput{
-    width: 200px;
+    width: 350px;
     height: 60px;
     border-radius: 30px;
     background: linear-gradient(
@@ -142,6 +143,10 @@ img{
     border: none;
     outline: 0;
     box-shadow: 0 0 0 0 !important;
+}
+
+#shortscreen{
+    display: none !important;
 }
 
 .swiper {
@@ -193,4 +198,22 @@ table tr th{
     100% {
         left: -55px;
     }
-  }
+}
+
+@media screen and (max-width: 1000px){
+    #desktop{
+        display: none !important;
+    }
+
+    #shortscreen{
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .scts {
+        flex-wrap: wrap;
+        max-width: 350px;
+        height: 120px;
+    }
+}
